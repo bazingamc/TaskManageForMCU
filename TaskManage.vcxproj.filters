@@ -13,16 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="源文件\task">
-      <UniqueIdentifier>{24ad27f2-2867-42c7-907f-309932130d52}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="TaskManageDemo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="task.cpp">
-      <Filter>源文件\task</Filter>
+    <ClCompile Include="task\task.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
