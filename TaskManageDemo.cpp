@@ -33,9 +33,11 @@ void timer_init()
 	}
 }
 
+//任务函数声明
 void task1(task* self, TaskParam* param);
 void task2(task* self, TaskParam* param);
 
+//创建任务（推荐使用全局对象）
 task t1("t1", task1);//创建任务1
 task t2("t2", task2);//创建任务2
 
@@ -94,7 +96,7 @@ int main()
 
 	while (1)
 	{
-		task::TaskRun();
+		task::TaskRun();//循环调用，不能阻塞
 	}
 }
 
