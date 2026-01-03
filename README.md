@@ -15,14 +15,18 @@ MCU裸机状态机任务管理框架
 快速开始：
 
 1.导入代码文件：
+```
 task.cpp  task.h
+```
 
 2.创建任务：
+```
 task t1("t1", task1);
+```
 
 3.编写任务实体：
 将一个任务拆分为多个步骤，每个步骤使用一个case执行，任务中禁止阻塞延迟
-
+```
 void task1(task* self, TaskParam* param)
 {
 	switch (self->GetUserState())
@@ -43,15 +47,20 @@ void task1(task* self, TaskParam* param)
 		break;
 	}
 }
+```
 
 4.在1ms定时器中挂载时间变量
+```
 task::now_time ++;
+```
 
 5.启动任务：
+```
 TaskParam p1;
 p1.father = nullptr;
 p1.data = nullptr;
 p1.data_len = 0;
 t1.Start(&p1, 0);//启动任务
+```
 
 
