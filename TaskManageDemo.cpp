@@ -20,9 +20,9 @@ void timer_init()
 	// 设置定时器分辨率为 1ms
 	timeBeginPeriod(1);
 
-	// 创建周期性定时器，间隔 1ms
+	// 创建周期性定时器，间隔 1000ms
 	MMRESULT timerId = timeSetEvent(
-		1000,           // 定时间隔 1ms
+		1000,           // 定时间隔 1000ms
 		0,           // 分辨率，0表示最大精度
 		TimerProc,   // 回调函数
 		0,           // 用户数据
